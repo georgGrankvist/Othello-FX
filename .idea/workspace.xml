@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb34af1-390d-4730-9492-92d67a810f3d" name="Changes" comment="" />
+    <list default="true" id="abb34af1-390d-4730-9492-92d67a810f3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/Othello FX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/Othello FX.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentA.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +15,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="21SP20sScafCl3NVHvpK6rdbHzm" />
   <component name="ProjectViewState">
@@ -18,16 +27,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.jdks/openjfx-17.0.1_windows-x64_bin-sdk/javafx-sdk-17.0.1/lib" />
+    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RunManager">
     <configuration name="AgentManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.AgentManager" />
       <module name="Othello FX" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;$USER_HOME$/javafx-sdk-17.0.1/lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.web --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -56,6 +66,15 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

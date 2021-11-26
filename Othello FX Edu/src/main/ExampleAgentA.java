@@ -40,10 +40,10 @@ public class ExampleAgentA extends Agent{
 		ThreadManager.pause(TimeSpan.millis(waitTime)); // Pauses execution for the wait time to cause delay
 
 
-		//todo MinMax
+		AgentController.getMiniMax(gameState,5,Integer.MIN_VALUE, Integer.MAX_VALUE,playerTurn);
 
 
-		return AgentController.getMiniMax(gameState, 3, playerTurn);
+		return AgentController.getExampleMove(gameState,playerTurn);
 	}
 	
 	/**
