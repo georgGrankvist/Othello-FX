@@ -103,7 +103,24 @@ public class AgentController {
 		this.agentOne = agentOne;
 		this.agentTwo = agentTwo;
 	}
-	
+
+
+	public static MoveWrapper getMiniMaxMove (double value) {
+		MoveWrapper moveWrapper = new MoveWrapper();
+	}
+
+
+
+	public static AgentMove getMiniMax(GameBoardState gameState, int depth, PlayerTurn playerTurn) {
+
+		if (depth == 0 || isTerminal(gameState, playerTurn)); {}
+
+
+	}
+
+
+
+
 	private Agent getAgent(PlayerTurn player){
 		switch(player){
 		case PLAYER_ONE:
@@ -140,11 +157,11 @@ public class AgentController {
 		}
 	}
 
-	
+
 	public synchronized void makeMove(GameBoard gameBoard) {
 		makeMove(PlayerTurn.PLAYER_ONE, gameBoard);
 	}
-	
+
 	public synchronized void makeMove(PlayerTurn agentTurn, GameBoard gameBoard) {
 
 		if(othello.getGameController().isGamePaused()){
@@ -423,8 +440,7 @@ public class AgentController {
 					}
 				}
 			}
-		}	
-		
+		}
 		return moves;
 	}
 

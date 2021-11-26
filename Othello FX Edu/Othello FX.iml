@@ -14,16 +14,7 @@
     </content>
     <orderEntry type="jdk" jdkName="openjdk-17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="javafx-sdk-17.0" level="project" />
-    <orderEntry type="library" exported="" name="lib" level="application" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../OthelloFX Demo_lib.zip!/OthelloFX Demo_lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER" level="application" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>
