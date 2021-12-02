@@ -36,8 +36,19 @@ public class ExampleAgentA extends Agent {
 	 */
 	@Override
 	public AgentMove getMove(GameBoardState gameState) {
+<<<<<<< HEAD
 
 		return getExampleMove(gameState);
+=======
+		int waitTime = UserSettings.MIN_SEARCH_TIME; // 1.5 seconds
+		ThreadManager.pause(TimeSpan.millis(waitTime)); // Pauses execution for the wait time to cause delay
+
+
+		AgentController.getMiniMax(gameState,5,Integer.MIN_VALUE, Integer.MAX_VALUE,playerTurn);
+
+
+		return AgentController.getExampleMove(gameState,playerTurn);
+>>>>>>> f84e47ea004cbcd648a619448575e7f0f71491ec
 	}
 	
 	/**

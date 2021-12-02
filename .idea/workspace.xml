@@ -18,6 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="21SP20sScafCl3NVHvpK6rdbHzm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,9 +29,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -39,7 +44,7 @@
     <configuration name="AgentManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.AgentManager" />
       <module name="Othello FX" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;$USER_HOME$/javafx-sdk-17.0.1/lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.web --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -66,5 +71,17 @@
       <updated>1637931314439</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

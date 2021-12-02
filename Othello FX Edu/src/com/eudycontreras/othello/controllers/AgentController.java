@@ -13,6 +13,7 @@ import com.eudycontreras.othello.capsules.MoveWrapper;
 import com.eudycontreras.othello.capsules.ObjectiveWrapper;
 import com.eudycontreras.othello.capsules.TraversalWrapper;
 import com.eudycontreras.othello.enumerations.BoardCellState;
+import com.eudycontreras.othello.enumerations.GameState;
 import com.eudycontreras.othello.enumerations.PlayerTurn;
 import com.eudycontreras.othello.exceptions.NoSpecifiedAgentException;
 import com.eudycontreras.othello.exceptions.NotImplementedException;
@@ -105,6 +106,48 @@ public class AgentController {
 	}
 
 
+<<<<<<< HEAD
+=======
+
+
+
+	public static double getMiniMax(GameBoardState gameState, double depth, double alpha, double beta, PlayerTurn playerTurn) {
+
+		List <ObjectiveWrapper> possibleMoves = getAvailableMoves(gameState,playerTurn);
+
+		if (depth == 0 || isTerminal(gameState, playerTurn)); {
+			double eval = heuristicEvaluation(gameState,HeuristicType.DYNAMIC,playerTurn);
+			return eval;
+		}
+
+		if (playerTurn == PlayerTurn.PLAYER_ONE) {
+			int top = 0;
+
+			for (int i = 0; i < possibleMoves.size(); i++) {
+				double score = getMiniMax(gameState,depth-1, alpha,beta,PlayerTurn.PLAYER_TWO);
+
+				if (score > alpha) {
+					alpha = score;
+				}
+
+				if (alpha >= beta) break;
+
+				if (depth == 0) {
+					gameState.setGameBoardCells(possibleMoves.get(i).);
+				}
+			}
+		}
+
+
+
+
+		return 10.0;
+
+	}
+
+
+
+>>>>>>> f84e47ea004cbcd648a619448575e7f0f71491ec
 
 	private Agent getAgent(PlayerTurn player){
 		switch(player){
