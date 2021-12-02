@@ -105,21 +105,6 @@ public class AgentController {
 	}
 
 
-	public static MoveWrapper getMiniMaxMove (double value) {
-		MoveWrapper moveWrapper = new MoveWrapper();
-	}
-
-
-
-	public static AgentMove getMiniMax(GameBoardState gameState, int depth, PlayerTurn playerTurn) {
-
-		if (depth == 0 || isTerminal(gameState, playerTurn)); {}
-
-
-	}
-
-
-
 
 	private Agent getAgent(PlayerTurn player){
 		switch(player){
@@ -236,6 +221,9 @@ public class AgentController {
 
 		return AgentController.findBestMove(gameState, playerTurn);
 	}
+
+
+
 	
 	/**
 	 * Example method which returns the move that yields the most immediate reward
@@ -379,15 +367,15 @@ public class AgentController {
 	public static ObjectiveWrapper getBestMove(GameBoardState state, PlayerTurn player){
 		
 		List<ObjectiveWrapper> moves = getAvailableMoves(state, player);
-		
+
 		if(moves.isEmpty()){
 			return null;
 		}
-		
+
 		ObjectiveWrapper move = getBestMove(moves);
-		
+
 		if(move == ObjectiveWrapper.NONE) return null;
-		
+
 		return move;
 	}
 	

@@ -19,9 +19,9 @@ import com.eudycontreras.othello.threading.TimeSpan;
  * 
  * @author Eudy Contreras
  */
-public class ExampleAgentA extends Agent{
+public class ExampleAgentA extends Agent {
 	
-	private ExampleAgentA() {
+	ExampleAgentA() {
 		super(PlayerTurn.PLAYER_ONE);
 		// TODO Auto-generated constructor stub
 	}
@@ -36,14 +36,8 @@ public class ExampleAgentA extends Agent{
 	 */
 	@Override
 	public AgentMove getMove(GameBoardState gameState) {
-		int waitTime = UserSettings.MIN_SEARCH_TIME; // 1.5 seconds
-		ThreadManager.pause(TimeSpan.millis(waitTime)); // Pauses execution for the wait time to cause delay
 
-
-		//todo MinMax
-
-
-		return AgentController.getMiniMax(gameState, 3, playerTurn);
+		return getExampleMove(gameState);
 	}
 	
 	/**
@@ -55,12 +49,12 @@ public class ExampleAgentA extends Agent{
 	 * @return
 	 */
 	private AgentMove getExampleMove(GameBoardState gameState){
-		
-		int waitTime = UserSettings.MIN_SEARCH_TIME; // 1.5 seconds
-		
+
+		int waitTime = UserSettings.MIN_SEARCH_TIME;
+
 		ThreadManager.pause(TimeSpan.millis(waitTime)); // Pauses execution for the wait time to cause delay
-		
-		return AgentController.getExampleMove(gameState, playerTurn); // returns an example AI move Note: this is not AB Pruning
+
+		return AgentController.findBestMove(gameState, playerTurn); // returns an example AI move Note: this is not AB Pruning
 	}
 
 }

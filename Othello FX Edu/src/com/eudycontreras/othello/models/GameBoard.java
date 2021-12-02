@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.eudycontreras.othello.application.OthelloSettings;
 import com.eudycontreras.othello.capsules.Index;
-import com.eudycontreras.othello.capsules.MoveWrapper;
+import com.eudycontreras.othello.capsules.ObjectiveWrapper;
 import com.eudycontreras.othello.enumerations.BoardCellState;
 import com.eudycontreras.othello.enumerations.PlayerTurn;
 import com.eudycontreras.othello.utilities.GameBoardUtility;
@@ -102,27 +102,7 @@ public class GameBoard {
 		this.computeCellNeighbors(cells);
 	}
 	
-	public void makeMove(MoveWrapper move){
-		int startRow = move.getStartIndex().getRow();
-		int startCol = move.getStartIndex().getCol();
-		
-		int endRow = move.getMoveIndex().getRow();
-		int endCol = move.getMoveIndex().getCol();
-		
-		int rowOffset = (startRow < endRow) ? 1 : (startRow > endRow) ? -1 : 0;
-		int colOffset = (startCol < endCol) ? 1 : (startCol > endCol) ? -1 : 0;
-		
-		int row = move.getStartIndex().getRow();
-		int col = move.getStartIndex().getCol();
-		
-		for(int i = 0; i<move.getMoveReward(); i++){
-			
-			row+=rowOffset;
-			col+=colOffset;
-			
-			cells[row][col].setCellState(move.getTargetState());
-		}
-	}
+
 	
 	public GameBoardCell getGameBoardCell(Index index){
 		return cells[index.getRow()][index.getCol()];
