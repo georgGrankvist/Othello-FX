@@ -13,7 +13,6 @@ import com.eudycontreras.othello.capsules.MoveWrapper;
 import com.eudycontreras.othello.capsules.ObjectiveWrapper;
 import com.eudycontreras.othello.capsules.TraversalWrapper;
 import com.eudycontreras.othello.enumerations.BoardCellState;
-import com.eudycontreras.othello.enumerations.GameState;
 import com.eudycontreras.othello.enumerations.PlayerTurn;
 import com.eudycontreras.othello.exceptions.NoSpecifiedAgentException;
 import com.eudycontreras.othello.exceptions.NotImplementedException;
@@ -33,6 +32,7 @@ import static main.UserSettings.G;
 import static main.UserSettings.H;
 
 import javafx.application.Platform;
+import main.MastermindAI;
 import main.UserSettings;
 
 /**
@@ -49,9 +49,15 @@ import main.UserSettings;
  */
 public class AgentController {
 
+	public static final int minDepth = 0;
+
 	public static final DeepeningType DEEPENING = UserSettings.DEEPENING;
 
 	public static final boolean PRINT_BOARD_STATES = false;
+
+	public int top;
+
+	public MastermindAI agentA;
 	
 	
 	public static final int NEIGHBOR_OFFSET_X[] = {-1, -1, 0, 1, 1, 1, 0, -1};
@@ -104,46 +110,6 @@ public class AgentController {
 		this.agentOne = agentOne;
 		this.agentTwo = agentTwo;
 	}
-
-
-
-
-
-	public static double getMiniMax(GameBoardState gameState, double depth, double alpha, double beta, PlayerTurn playerTurn) {
-
-		List <ObjectiveWrapper> possibleMoves = getAvailableMoves(gameState,playerTurn);
-
-		if (depth == 0 || isTerminal(gameState, playerTurn)); {
-			double eval = heuristicEvaluation(gameState,HeuristicType.DYNAMIC,playerTurn);
-			return eval;
-		}
-
-		if (playerTurn == PlayerTurn.PLAYER_ONE) {
-			int top = 0;
-
-			for (int i = 0; i < possibleMoves.size(); i++) {
-				double score = getMiniMax(gameState,depth-1, alpha,beta,PlayerTurn.PLAYER_TWO);
-
-				if (score > alpha) {
-					alpha = score;
-				}
-
-				if (alpha >= beta) break;
-
-				if (depth == 0) {
-					gameState.setGameBoardCells(possibleMoves.get(i).);
-				}
-			}
-		}
-
-
-
-
-		return 10.0;
-
-	}
-
-
 
 
 	private Agent getAgent(PlayerTurn player){
@@ -275,6 +241,7 @@ public class AgentController {
 
 		return new MoveWrapper(bestMove);
 	}
+
 	/**
 	 * Example method which returns a random move from a list of all available moves
 	 * @param currentState : The current state of the game
@@ -415,6 +382,11 @@ public class AgentController {
 		
 		return move;
 	}
+
+	private static int getUtility(GameBoardState node) {
+		return (node.getWhiteCount() - node.getBlackCount());
+	}
+
 	
 	/**
 	 * Returns the best move given a list of moves
@@ -1036,7 +1008,7 @@ public class AgentController {
 		case MOBILITY:
 			return getMobilityHeuristic(state);
 		case STABILITY:
-			return getStabilityHeuristic(state);
+				return getStabilityHeuristic(state);
 		case FRONTIER:
 			return getFrontierHeuristic(state);
 		case DYNAMIC:

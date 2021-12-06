@@ -31,7 +31,17 @@ public class ObjectiveWrapper {
 	private GameBoardCell currentCell;	
 	
 	private List<TraversalWrapper> path = new LinkedList<>();
-	
+
+	private int moveReward;
+
+	public int getMoveReward() {
+		return moveReward;
+	}
+
+	public void setMoveReward(int moveReward) {
+		this.moveReward = moveReward;
+	}
+
 	public ObjectiveWrapper(List<TraversalWrapper> path) {
 		this.path = path;
 		if(path == null){
@@ -42,6 +52,12 @@ public class ObjectiveWrapper {
 	public ObjectiveWrapper(GameBoardCell cell, GameBoardCell currentCell) {
 		this.objectiveCell = cell;
 		this.currentCell = currentCell;
+	}
+
+	public ObjectiveWrapper(GameBoardCell cell, GameBoardCell currentCell, int moveReward) {
+		this.objectiveCell = cell;
+		this.currentCell = currentCell;
+		this.moveReward = moveReward;
 	}
 	
 	private static ObjectiveWrapper getDefault(){

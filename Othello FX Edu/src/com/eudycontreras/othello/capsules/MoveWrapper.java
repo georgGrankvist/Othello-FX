@@ -56,7 +56,7 @@ public class MoveWrapper extends AgentMove{
 		this.target = objective.getObjectiveCell().getCellState();
 		this.moveIndex = objective.getObjectiveCell().getIndex();
 		this.startIndex = objective.getCurrentCell().getIndex();
-		this.moveReward = objective.getPath().size();
+		this.moveReward = objective.getMoveReward();
 	}
 
 	/**

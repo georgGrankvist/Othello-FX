@@ -30,7 +30,9 @@ public class GameBoardState {
 	
 	private boolean visited = false;
 	
-	private boolean isRoot = false; 
+	private boolean isRoot = false;
+
+	public int stateHeuristic = 0;
 
 	private BoardCellState playerTurn;
 	
@@ -40,7 +42,7 @@ public class GameBoardState {
 
 	private GameBoardState parentState;
 	
-	private List<GameBoardState> childStates;
+	private final List<GameBoardState> childStates;
 	
 	public GameBoardState(GameBoard gameBoard){
 		this(gameBoard, false);
@@ -51,7 +53,16 @@ public class GameBoardState {
 		this.isRoot = isRoot;
 		this.childStates = new ArrayList<>();
 	}
-	
+
+
+	public int getStateHeuristic() {
+		return stateHeuristic;
+	}
+
+	public void setStateHeuristic(int stateHeuristic) {
+		this.stateHeuristic = stateHeuristic;
+	}
+
 	public static GameBoardState createBoardState(GameBoardCell[][] cells){
 		return createBoardState(cells,false);
 	}

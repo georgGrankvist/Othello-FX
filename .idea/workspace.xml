@@ -2,16 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb34af1-390d-4730-9492-92d67a810f3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/MastermindAI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/Othello FX.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/Othello FX.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/MoveWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/MoveWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/ObjectiveWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/ObjectiveWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentA.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/models/GameBoardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/models/GameBoardState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/AgentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/AgentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/UserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/UserSettings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,10 +42,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PATH_TO_FX$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quant\OneDrive\Documents\GitHub\Othello-FX\Othello FX Edu\src\main" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="AgentManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
