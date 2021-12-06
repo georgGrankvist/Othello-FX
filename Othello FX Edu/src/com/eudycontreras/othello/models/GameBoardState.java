@@ -24,7 +24,17 @@ import com.eudycontreras.othello.utilities.GameTreeUtility;
  *
  */
 public class GameBoardState {
-	
+
+	public int getStateValue() {
+		return stateValue;
+	}
+
+	public void setStateValue(int stateValue) {
+		this.stateValue = stateValue;
+	}
+
+	private int stateValue = 0;
+
 	private int whiteCount = 0;
 	private int blackCount = 0;
 	
@@ -315,4 +325,6 @@ public class GameBoardState {
 			}	
 		};
 	}
+
+
 }

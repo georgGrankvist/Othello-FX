@@ -111,7 +111,6 @@ public class AgentController {
 		this.agentTwo = agentTwo;
 	}
 
-
 	private Agent getAgent(PlayerTurn player){
 		switch(player){
 		case PLAYER_ONE:
@@ -227,6 +226,9 @@ public class AgentController {
 
 		return AgentController.findBestMove(gameState, playerTurn);
 	}
+
+
+
 	
 	/**
 	 * Example method which returns the move that yields the most immediate reward
@@ -371,15 +373,15 @@ public class AgentController {
 	public static ObjectiveWrapper getBestMove(GameBoardState state, PlayerTurn player){
 		
 		List<ObjectiveWrapper> moves = getAvailableMoves(state, player);
-		
+
 		if(moves.isEmpty()){
 			return null;
 		}
-		
+
 		ObjectiveWrapper move = getBestMove(moves);
-		
+
 		if(move == ObjectiveWrapper.NONE) return null;
-		
+
 		return move;
 	}
 
