@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abb34af1-390d-4730-9492-92d67a810f3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/MastermindAI.java" afterDir="false" />
+    <list default="true" id="13bb311c-72d0-46c9-844d-6a8cde28d820" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/MoveWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/MoveWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/ObjectiveWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/capsules/ObjectiveWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/models/GameBoardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/models/GameBoardState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/AgentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/AgentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentC.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ExampleAgentD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/UserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/UserSettings.java" afterDir="false" />
     </list>
-
-    <list default="true" id="abb34af1-390d-4730-9492-92d67a810f3d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="ProjectId" id="21SP20sScafCl3NVHvpK6rdbHzm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,24 +16,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\quant\OneDrive\Documents\GitHub\Othello-FX\Othello FX Edu\src\main" />
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="main" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="AgentManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.AgentManager" />
       <module name="Othello FX" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\quant\.jdks\openjfx-17.0.1_windows-x64_bin-sdk\javafx-sdk-17.0.1\lib&quot; --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web --add-reads javafx.graphics=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.charts=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio.common=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED --add-opens javafx.base/com.sun.javafx.runtime=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -80,11 +45,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="abb34af1-390d-4730-9492-92d67a810f3d" name="Changes" comment="" />
-      <created>1637931314439</created>
+      <changelist id="13bb311c-72d0-46c9-844d-6a8cde28d820" name="Changes" comment="" />
+      <created>1638806010086</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637931314439</updated>
+      <updated>1638806010086</updated>
     </task>
     <servers />
   </component>
@@ -98,6 +63,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
