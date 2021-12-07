@@ -23,18 +23,18 @@ import java.util.List;
  * 
  * @author Eudy Contreras
  */
-public class MastermindAI extends Agent {
+public class ABPruningAgent extends Agent {
 
 	public int prunedCounter = 0;
 
 
-	MastermindAI(String agentName) {
+	ABPruningAgent(String agentName) {
 		super(agentName);
 		this.setAgentName("MASTERMIND");
 		// TODO Auto-generated constructor stub
 	}
 
-	MastermindAI(PlayerTurn playerTurn, String agentName) {
+	ABPruningAgent(PlayerTurn playerTurn, String agentName) {
 		super(agentName, playerTurn);
 		// TODO Auto-generated constructor stub
 	}
@@ -56,41 +56,43 @@ public class MastermindAI extends Agent {
 
 	public AgentMove getMiniMaxMove (GameBoardState gameState) {
 
-		resetStatistics();
 
+		if ((!AgentController.isTerminal(gameState, PlayerTurn.PLAYER_ONE))) {
 
-		if ((!AgentController.isTerminal(gameState,PlayerTurn.PLAYER_ONE))){
-
-		   	long startTime = System.currentTimeMillis();
-			int val = getMiniMax(gameState, 6,Integer.MIN_VALUE, Integer.MAX_VALUE,true );
+			long startTime = System.currentTimeMillis();
+			int miniMaxEvaluation = getMiniMax(gameState, 6, Integer.MIN_VALUE, Integer.MAX_VALUE, true);
 			long endTime = System.currentTimeMillis();
-			long timeElapsed = (endTime- startTime);
+			long timeElapsed = (endTime - startTime);
 
 			System.out.println("Time elapsed = " + timeElapsed + "ms");
 
 			ObjectiveWrapper optimalMove = null;
 
-			List<GameBoardState> states = gameState.getChildStates();
+			List<GameBoardState> states = gameState.getChildStates();  //Create list of child states
 
 			for (GameBoardState state : states) {
 
-				if (state.getStateHeuristic() == val) {
-					System.out.println("MASTERMIND  : VALUE " + val + " MATCHED WITH STATE HEURISTIC "  + state.getStateHeuristic());
-					optimalMove = state.getLeadingMove();
+				//Iterate through list of child states until state matching the highest evaluation for the maximizing player returned by Minimax is found
+
+				if (state.getStateHeuristic() == miniMaxEvaluation) {
+					System.out.println("MINIMAX RETURN VALUE " + miniMaxEvaluation + " MATCHED WITH STATE HEURISTIC " + state.getStateHeuristic());
+					optimalMove = state.getLeadingMove(); //Optimal move for the AI is then the state that leads to this evaluation
 					break;
 				}
 			}
 
-			if(optimalMove == null) {
+			if (optimalMove == null) {
 				System.out.println("UNABLE TO LOCATE MOVE");
-				optimalMove= states.get(0).getLeadingMove();
+				optimalMove = states.get(0).getLeadingMove();
 			}
 
 			System.out.println("Nodes pruned: " + prunedCounter);
 			return new MoveWrapper(optimalMove);
+
 		}
-		else
-			return new MoveWrapper(null);
+
+		return new MoveWrapper(null);
+
 
 	}
 
@@ -98,10 +100,10 @@ public class MastermindAI extends Agent {
 
 
 
-	public  int getMiniMax(GameBoardState gameState, int depth, int alpha, int beta, boolean maximizingPlayer ) {
+	public int getMiniMax(GameBoardState gameState, int depth, int alpha, int beta, boolean maximizingPlayer ) {
 
 
-		if (depth == AgentController.minDepth) {
+		if (depth == AgentController.minDepth && !AgentController.isTerminal(gameState,playerTurn)) {
 			setReachedLeafNodes(getReachedLeafNodes() + 1 );
 			return (int) AgentController.getDynamicHeuristic(gameState);
 		}
@@ -159,6 +161,7 @@ public class MastermindAI extends Agent {
 					prunedCounter += getPrunedCounter();
 					break;
 				}
+
 
 
 			}

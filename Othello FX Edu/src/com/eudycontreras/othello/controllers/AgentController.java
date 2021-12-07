@@ -32,7 +32,7 @@ import static main.UserSettings.G;
 import static main.UserSettings.H;
 
 import javafx.application.Platform;
-import main.MastermindAI;
+import main.ABPruningAgent;
 import main.UserSettings;
 
 /**
@@ -57,7 +57,7 @@ public class AgentController {
 
 	public int top;
 
-	public MastermindAI agentA;
+	public ABPruningAgent agentA;
 	
 	
 	public static final int NEIGHBOR_OFFSET_X[] = {-1, -1, 0, 1, 1, 1, 0, -1};

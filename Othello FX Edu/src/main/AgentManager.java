@@ -53,7 +53,7 @@ public class AgentManager extends Application{
 	@Override
 	public void start(Stage primaryStage) {
 
-		new Othello(primaryStage, new MastermindAI(PlayerTurn.PLAYER_ONE, "Mastermind"),new ExampleAgentB(PlayerTurn.PLAYER_TWO));
+		new Othello(primaryStage, new ABPruningAgent(PlayerTurn.PLAYER_ONE, "Mastermind"),new ExampleAgentB(PlayerTurn.PLAYER_TWO));
 		//new Othello(primaryStage, new ExampleAgentB());
 		//new Othello(primaryStage, new ExampleAgentC());
 		//new Othello(primaryStage, new ExampleAgentD());

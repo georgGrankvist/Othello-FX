@@ -3,12 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="13bb311c-72d0-46c9-844d-6a8cde28d820" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/com/eudycontreras/othello/controllers/AgentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/AgentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/AgentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Othello FX Edu/src/main/MastermindAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Othello FX Edu/src/main/ABPruningAgent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21wzvW49GOQiHNWDCvExhQghLIp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,5 +70,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
